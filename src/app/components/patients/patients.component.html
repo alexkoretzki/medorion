@@ -1,0 +1,4 @@
+<app-filters (onSearchApplied)="search($event)"></app-filters>
+<ng-container *ngFor="let item of patients | async">
+  <app-patient [patient]="item"></app-patient>
+</ng-container>
